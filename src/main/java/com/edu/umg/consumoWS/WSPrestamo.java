@@ -23,7 +23,7 @@ public class WSPrestamo {
     
     //Agregar aca los Endpoints de cada WS
     private static final String WSLISTAR_URL="http://192.168.191.36:8080/WSListar-1.0-SNAPSHOT/ws/listar/prestamos";
-    private static final String WSINSERTAR_URL="http://192.168.191.112:8080/WSInsertar-1.0-SNAPSHOT/ws/insertar/insertar/prestamo";
+    private static final String WSINSERTAR_URL="http://192.168.191.112:8080/WSInsertar-1.0-SNAPSHOT/ws/insertar/prestamo";
     private static final String WSUPDATE_URL="http://192.168.191.240:8080/WSupdate-1.0-SNAPSHOT/ws/actualizar/prestamo";
     // Obtener todos los préstamos
     public List<Prestamo> obtenerPrestamos() throws Exception {
