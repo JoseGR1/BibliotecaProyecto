@@ -16,9 +16,9 @@ import java.util.List;
 
 public class WSUsuario {
         //Agregar aca los Endpoints de cada WS
-    private static final String WSLISTAR_URL=" ";
-    private static final String WSINSERTAR_URL=" ";
-    private static final String WSUPDATE_URL=" ";
+    private static final String WSLISTAR_URL="http://192.168.191.36:8080/WSListar-1.0-SNAPSHOT/ws/listar/usuarios";
+    private static final String WSINSERTAR_URL="http://192.168.191.112:8080/WSInsertar-1.0-SNAPSHOT/ws/insertar/usuario";
+    private static final String WSUPDATE_URL="http://192.168.191.240:8080/WSupdate-1.0-SNAPSHOT/ws/actualizar/usuario";
     
     // Obtener todos los usuarios
     public List<Usuario> obtenerUsuarios() throws Exception {
