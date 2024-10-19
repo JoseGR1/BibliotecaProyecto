@@ -19,7 +19,7 @@ import java.util.List;
 public class WSPersonal {
     //Agregar aca los Endpoints de cada WS
     private static final 
-            String WSLISTAR_URL="http://192.168.0.108:8083/WSListar-1.0-SNAPSHOT/ws/listar/personal";
+            String WSLISTAR_URL="http://192.168.0.100:8083/WSListar-1.0-SNAPSHOT/ws/listar/personal";
     private static final 
             String WSINSERTAR_URL="http://192.168.0.110:8082/WSInsertar-1.0-SNAPSHOT/ws/insertar/personal";
     private static final 
