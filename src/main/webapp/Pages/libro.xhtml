@@ -81,7 +81,7 @@
 
             <p:outputLabel for="fechaPublicacion" value="Fecha de Publicación:" />
             <p:inputText id="fechaPublicacion" value="#{libroBean.nuevoLibro.fecha_publicacion}" required="true" converter="dateConverter" />
-
+                
             <p:outputLabel for="Autor" value="Autor:" />
             <p:inputText id="Autor" value="#{libroBean.autorSeleccionado.nombre}" disabled="true" />
             
@@ -171,9 +171,6 @@
             </p:column>
             <p:column headerText="Número de Páginas">
                 <h:outputText value="#{libro.numero_paginas}" />
-            </p:column>
-            <p:column headerText="Descripción">
-                <h:outputText value="#{libro.descripcion}" />
             </p:column>
             <p:column headerText="Fecha de Publicación">
                 <h:outputText value="#{libro.fecha_publicacion}" converter="dateConverter" />
