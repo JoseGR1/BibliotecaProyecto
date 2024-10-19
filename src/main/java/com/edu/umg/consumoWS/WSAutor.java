@@ -17,7 +17,7 @@ import java.util.List;
 public class WSAutor {
     //Agregar aca los Endpoints de cada WS
     private static final 
-            String WSLISTAR_URL="http://192.168.191.26:8083/WSListar-1.0-SNAPSHOT/ws/listar/autores";
+            String WSLISTAR_URL="http://192.168.0.108:8083/WSListar-1.0-SNAPSHOT/ws/listar/autores";
     private static final 
             String WSINSERTAR_URL="http://192.168.0.110:8082/WSInsertar-1.0-SNAPSHOT/ws/insertar/autor";
     private static final String 
