@@ -16,11 +16,11 @@ import java.util.List;
 public class WSPuesto {
         //Agregar aca los Endpoints de cada WS
     private static final 
-            String WSLISTAR_URL="http://192.168.191.26:8083/WSListar-1.0-SNAPSHOT/ws/listar/puestos";
+            String WSLISTAR_URL="http://192.168.0.108:8083/WSListar-1.0-SNAPSHOT/ws/listar/puestos";
     private static final 
-            String WSINSERTAR_URL="http://192.168.191.112:8082/WSInsertar-1.0-SNAPSHOT/ws/insertar/puesto";
+            String WSINSERTAR_URL="http://192.168.0.110:8082/WSInsertar-1.0-SNAPSHOT/ws/insertar/puesto";
     private static final 
-            String WSUPDATE_URL="http://192.168.191.240:8084/WSUpdate-1.0-SNAPSHOT/ws/actualizar/puesto";
+            String WSUPDATE_URL="http://192.168.0.104:8084/WSUpdate-1.0-SNAPSHOT/ws/actualizar/puesto";
     // Obtener todos los puestos
     public List<Puesto> obtenerPuestos() throws Exception {
         List<Puesto> puestos = new ArrayList<>();

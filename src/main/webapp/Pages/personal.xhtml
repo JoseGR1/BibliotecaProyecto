@@ -159,7 +159,11 @@
         <p:commandButton value="Cancelar" type="button" onclick="PF('dlgSeleccionarPuesto').hide();" 
                          style="margin-top: 10px; margin-left: 10px;" /> 
                      <!-- Botón para mostrar el diálogo de agregar puesto -->
-        <p:commandButton value="Agregar/Editar" styleClass="ui-button-secondary" oncomplete="PF('dlgGestionarPuestos').show();"
+        <p:commandButton value="Agregar/Editar" 
+                         action="#{puestoBean.agregarPuesto()}" 
+                         update=":formPuestosGestionar:puestosTable :formSeleccionarPuesto:puestosTable"
+                         styleClass="ui-button-secondary" 
+                         oncomplete="PF('dlgGestionarPuestos').show();"
                          style="margin-top: 10px;"/>
 
     </h:form>
@@ -216,7 +220,7 @@
 <p:dialog header="Gestionar Puestos" widgetVar="dlgGestionarPuestos" modal="true" closable="true" resizable="false">
     <h:form id="formPuestosGestionar">
         <p:dataTable id="puestosTable" value="#{puestoBean.listaPuestos}" 
-                     var="puesto" rows="5" scrollable="true" scrollHeight="200" style="max-width: 400px;">
+                     var="puesto" rows="5" scrollable="true" scrollHeight="500" style="max-width: 400px;">
             <p:column headerText="Nombre">
                 <h:outputText value="#{puesto.nombre}" />
             </p:column>
@@ -231,6 +235,8 @@
         <p:commandButton value="Agregar" icon="pi pi-plus" 
                          oncomplete="PF('dlgAgregarPuesto').show();" />
         <p:commandButton value="Cerrar" onclick="PF('dlgGestionarPuestos').hide();" 
+                         action="#{puestoBean.agregarPuesto()}" 
+                         update=":formSeleccionarPuesto:puestosTable"
                          type="button"
                          style="margin-left: 10px;"/>
     </h:form>
